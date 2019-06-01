@@ -1,21 +1,28 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//React Navigation Components
+import {
+  createAppContainer,
+  createStackNavigator
+} from 'react-navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+//Screen Components
+import ActivitiesScreen from './src/screens/activities';
+import BookingScreen from './src/screens/booking';
+import ContactScreen from './src/screens/contact';
+import HomeScreen from './src/screens/home';
+import InformationScreen from './src/screens/information';
+import LanguageScreen from './src/screens/language';
+import LoginScreen from './src/screens/login';
+import RatingsScreen from './src/screens/ratings';
+import SigninScreen from './src/screens/signing';
+import SocialScreen from './src/screens/social';
+import WeatherScreen from './src/screens/weather';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+//Stack Navigator
+const MainNavigator = createStackNavigator({
+  Home: { screen: HomeScreen },
+  //Login: { screen: LoginScreen },
+  //Signin: { screen: SigninScreen },
 });
+
+const App = createAppContainer(MainNavigator);
+export default App
