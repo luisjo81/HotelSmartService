@@ -13,7 +13,7 @@ import colors from '../../constants/colors';
 import styles from '../../constants/styles';
 
 //Backgrounds
-import BackgroundUmami from '../../assets/backgrounds/umami_1.jpg';
+import BackgroundUmami from '../../assets/backgrounds/umami_1.png';
 
 //Icons
 import IconUmami from '../../assets/icons/umami.png';

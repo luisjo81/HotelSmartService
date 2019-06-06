@@ -10,9 +10,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "../../assets/icons/umami.png",
+    "icon": "./src/assets/icons/umami.png",
     "splash": {
-      "image": "../../assets/backgrounds/umami_1.jpg",
+      "image": "./src/assets/icons/umami.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

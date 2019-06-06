@@ -5,23 +5,29 @@ import {
 } from 'react-navigation';
 
 //Screen Components
-import ActivitiesScreen from './src/screens/activities';
-import BookingScreen from './src/screens/booking';
 import ContactScreen from './src/screens/contact';
 import HomeScreen from './src/screens/home';
 import InformationScreen from './src/screens/information';
 import LanguageScreen from './src/screens/language';
+import LocationScreen from './src/screens/information/location';
 import LoginScreen from './src/screens/login';
-import RatingsScreen from './src/screens/ratings';
-import SigninScreen from './src/screens/signing';
-import SocialScreen from './src/screens/social';
-import WeatherScreen from './src/screens/weather';
+import RestaurantScreen from './src/screens/information/restaurant';
+import ServicesScreen from './src/screens/information/services';
+import SigninScreen from './src/screens/signin';
+import SocialMediaScreen from './src/screens/social';
 
 //Stack Navigator
 const MainNavigator = createStackNavigator({
-  Home: { screen: HomeScreen },
+  //Home: { screen: HomeScreen },
+  Information: { screen: InformationScreen},
+  //Contact: { screen: ContactScreen },
+  //Languages: { screen: LanguageScreen }
+  Location: { screen: LocationScreen},
   //Login: { screen: LoginScreen },
+  Restaurant: { screen: RestaurantScreen},
+  Services: { screen: ServicesScreen},
   //Signin: { screen: SigninScreen },
+  //SocialMedia: { screen: SocialMediaScreen },
 });
 
 const App = createAppContainer(MainNavigator);
