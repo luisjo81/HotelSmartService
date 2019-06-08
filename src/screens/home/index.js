@@ -92,19 +92,23 @@ export default class Home extends Component {
     _clickEventListener(key) {
         switch(key){
             case "info":
-                //this.props.navigation.navigate('Menu');
+                this.props.navigation.navigate('Information');
                 break;
             case "login":
+                this.props.navigation.navigate('Login');
                 break;
             case "booking":
                 break;
             case "social":
+                this.props.navigation.navigate('SocialMedia');
                 break;
             case "ratings":
                 break;
             case "contact":
+                this.props.navigation.navigate('Contact');
                 break;
             case "language":
+                this.props.navigation.navigate('Language');
                 break;
         }
     }

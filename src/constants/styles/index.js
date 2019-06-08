@@ -43,6 +43,42 @@ const styles = StyleSheet.create({
         flex: 1,
         marginTop: 50
     },
+    //Generic Info Screen
+    genericInfoScreenBackground: {
+        flex: 1,
+        height: '100%',
+        width: '100%'
+    },
+    genericInfoScreenCardImage: {
+        alignSelf: 'center',
+        height: 400,
+        marginHorizontal: 2,
+        marginTop: 1,
+        width: 300
+    },
+    genericInfoScreenList: {
+        height: 10,
+        paddingBottom: '50%'
+    },
+    genericInfoScreenListContainer: {
+        alignItems: 'center'
+    },
+    genericInfoScreenMainContainer: {
+        flex: 1,
+        marginTop: 5
+    },
+    genericInfoScreenOptionContainer: {
+        height: '70%'
+    },
+    genericInfoScreenText: {
+        color: colors.black,
+        flex: 1,
+        fontFamily: 'Chalkduster',
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginTop: 42,
+        textAlign: 'justify'
+    },
     //Home Screen
     homeScreenBackground: {
         flex: 1,
@@ -214,42 +250,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         width: '100%'
     },
-    //Generic Info Screen
-    genericInfoScreenBackground: {
-        flex: 1,
-        height: '100%',
-        width: '100%'
-    },
-    genericInfoScreenCardImage: {
-        alignSelf: 'center',
-        height: 400,
-        marginHorizontal: 2,
-        marginTop: 1,
-        width: 300
-    },
-    genericInfoScreenList: {
-        height: 10,
-        paddingBottom: '50%'
-    },
-    genericInfoScreenListContainer: {
-        alignItems: 'center'
-    },
-    genericInfoScreenMainContainer: {
-        flex: 1,
-        marginTop: 5
-    },
-    genericInfoScreenOptionContainer: {
-        height: '70%'
-    },
-    genericInfoScreenText: {
-        color: colors.black,
-        flex: 1,
-        fontFamily: 'Chalkduster',
-        fontSize: 16,
-        fontWeight: 'bold',
-        marginTop: 42,
-        textAlign: 'justify'
-    },
     //Login Screen
     loginScreenBackground: {
         flex: 1,
@@ -294,6 +294,47 @@ const styles = StyleSheet.create({
         fontSize: 60,
         fontWeight: 'bold',
         height: '10%',
+        textAlign: 'center',
+        width: '100%'
+    },
+     //Signin Screen
+     signinScreenBackground: {
+        flex: 1,
+        height: '100%',
+        width: '100%'
+    },
+    signinScreenButtonContainer: {
+        backgroundColor: colors.blue1,
+        padding: 15
+    },
+    signinScreenButtonText: {
+        color: colors.black,
+        fontWeight: '700',
+        textAlign: 'center'
+    },
+    signinScreenFormContainer: {
+        flex: 1,
+        marginBottom: 270
+    },
+    signinScreenInputContainer: {
+        backgroundColor: colors.transparentAqua,
+        height: 40,
+        marginBottom: 10,
+        paddingHorizontal: 10
+    },
+    signinScreenMainContainer: {
+        flex: 1
+    },
+    signinScreenSecondContainer: {
+        padding: 20
+    },
+    signinScreenTitleText: {
+        color: colors.blue1,
+        flex: 1,
+        fontFamily: 'Chalkduster',
+        fontSize: 60,
+        height: '10%',
+        marginTop: 10,
         textAlign: 'center',
         width: '100%'
     },

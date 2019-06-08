@@ -18,16 +18,16 @@ import SocialMediaScreen from './src/screens/social';
 
 //Stack Navigator
 const MainNavigator = createStackNavigator({
-  //Home: { screen: HomeScreen },
+  Home: { screen: HomeScreen },
   Information: { screen: InformationScreen},
-  //Contact: { screen: ContactScreen },
-  //Languages: { screen: LanguageScreen }
+  Contact: { screen: ContactScreen },
+  Language: { screen: LanguageScreen },
   Location: { screen: LocationScreen},
-  //Login: { screen: LoginScreen },
+  Login: { screen: LoginScreen },
   Restaurant: { screen: RestaurantScreen},
   Services: { screen: ServicesScreen},
-  //Signin: { screen: SigninScreen },
-  //SocialMedia: { screen: SocialMediaScreen },
+  Signin: { screen: SigninScreen },
+  SocialMedia: { screen: SocialMediaScreen },
 });
 
 const App = createAppContainer(MainNavigator);
